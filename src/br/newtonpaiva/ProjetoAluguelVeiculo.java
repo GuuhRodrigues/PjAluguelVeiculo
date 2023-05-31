@@ -18,6 +18,7 @@ public class ProjetoAluguelVeiculo extends JFrame {
 
     private void testaAluguelVeiculo() {
 
+        JFrame frame = new JFrame("Aluguel");
         Container janela = getContentPane();
         setLayout(null);
 
@@ -122,9 +123,10 @@ public class ProjetoAluguelVeiculo extends JFrame {
         janela.add(botao);
         botao.setBounds(100, 520, 200, 20);
 
-        setSize(420, 620);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
+        frame.getContentPane().add(janela);
+        frame.setSize(420, 620);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
 }
 
